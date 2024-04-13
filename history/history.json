@@ -1,14 +1,23 @@
 {
   "42b4a115007c35c622675a0baedb491a" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 2,
       "broken" : 6,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     },
     "items" : [ {
+      "uid" : "f5136bcb126a60ab",
+      "status" : "failed",
+      "statusDetails" : "Failed",
+      "time" : {
+        "start" : 1713047973277,
+        "stop" : 1713048005609,
+        "duration" : 32332
+      }
+    }, {
       "uid" : "e72b619251e356b8",
       "status" : "failed",
       "statusDetails" : "Failed",

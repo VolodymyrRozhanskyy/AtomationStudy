@@ -6,13 +6,13 @@
       "name" : "Failed",
       "children" : [ {
         "name" : "Change profile name",
-        "uid" : "e72b619251e356b8",
+        "uid" : "f5136bcb126a60ab",
         "parentUid" : "6e0b338f4175ed6de0bf823ef51c651f",
         "status" : "failed",
         "time" : {
-          "start" : 1713045704242,
-          "stop" : 1713045735622,
-          "duration" : 31380
+          "start" : 1713047973277,
+          "stop" : 1713048005609,
+          "duration" : 32332
         },
         "flaky" : false,
         "newFailed" : false,
