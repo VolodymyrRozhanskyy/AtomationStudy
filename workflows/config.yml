@@ -1,0 +1,29 @@
+name: smoke-test
+on:
+  push:
+    branches:
+      - 'master'
+  workflow_dispatch:
+
+jobs:
+  ui-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: action/checkout@v2
+
+      - name: RunUI tests via docker compose
+        env:
+          LOGIN: ${{ secrets.LOGIN }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+        run: docker-compose up --exit-code-from regression  || true
+      - name: generate allure
+        run: sudo docker-compose run regression /bin/sh -c "allure generate allure-results --clean -o allure-report"
+
+      - name: Deploy on GitHub pages
+      - uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          token: ${{ secrets.PASSWORD }}
+          branch: gh-pages
+          folder: allure-report
+          clean: true
