@@ -3,22 +3,22 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home",
+      "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
         "name" : "Change profile name",
-        "uid" : "475519d9a476e391",
-        "parentUid" : "ef857d6f4cf4ffef3566c9593c3dd3b1",
+        "uid" : "c4d4fb56e0e6a0ce",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1713042710577,
-          "stop" : 1713042710577,
-          "duration" : 0
+          "start" : 1713043237349,
+          "stop" : 1713043249922,
+          "duration" : 12573
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ef857d6f4cf4ffef3566c9593c3dd3b1"
+      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],
