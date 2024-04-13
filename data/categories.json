@@ -1,26 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message:",
+      "name" : "Failed",
       "children" : [ {
         "name" : "Change profile name",
-        "uid" : "a8add7a22f9a4be1",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
+        "uid" : "e72b619251e356b8",
+        "parentUid" : "6e0b338f4175ed6de0bf823ef51c651f",
+        "status" : "failed",
         "time" : {
-          "start" : 1713045356785,
-          "stop" : 1713045390317,
-          "duration" : 33532
+          "start" : 1713045704242,
+          "stop" : 1713045735622,
+          "duration" : 31380
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
+      "uid" : "6e0b338f4175ed6de0bf823ef51c651f"
     } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
   "name" : "categories"
 }

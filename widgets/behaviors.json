@@ -4,8 +4,8 @@
     "uid" : "bfe6fb5a25b9d3632e34c1e8a59f2830",
     "name" : "Profile Functionality",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
