@@ -10,6 +10,9 @@ class DashboardPage(BasePage):
 
     MY_INFO_BUTTON = ("xpath", "//span[text()='My Info']")
 
+    def __init__(self, driver):
+        super().__init__(driver)
+
     @allure.step("Click on 'My Info' link")
     def click_my_info_link(self):
         self.wait.until(EC.element_to_be_clickable(self.MY_INFO_BUTTON)).click()

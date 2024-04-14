@@ -11,6 +11,9 @@ class LoginPage(BasePage):
     PASSWORD_FIELD = ("xpath", "//input[@name='password']")
     SUBMIT_BUTTON = ("xpath", "//button[@type='submit']")
 
+    def __init__(self, driver):
+        super().__init__(driver)
+
     @allure.step("Enter login")
     def enter_login(self, login):
         self.wait.until(EC.element_to_be_clickable(self.USERNAME_FIELD)).send_keys(login)

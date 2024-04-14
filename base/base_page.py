@@ -11,6 +11,9 @@ class BasePage:
         self.driver = driver
         self.wait = WebDriverWait(driver, 20, poll_frequency=1)
 
+    def find(self, *args):
+        return self.driver.find_element(*args)
+
     def open(self):
         with allure.step(f"Open {self.PAGE_URL} page"):
             self.driver.get(self.PAGE_URL)
