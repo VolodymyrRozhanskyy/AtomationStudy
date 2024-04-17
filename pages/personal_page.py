@@ -36,6 +36,6 @@ class PersonalPage(BasePage):
         try:
             self.wait.until(EC.text_to_be_present_in_element_value(self.FIRST_NAME_FIELD, self.name))
         except:
-            actual = self.find('xpath', "//input[@name='firstName']").get_attribute('value')
+            actual = self.find(*self.FIRST_NAME_FIELD).get_attribute('value')
             self.make_screenshot(f"Expected FirstName is {self.name}  Actual FirstName: {actual}")
             pytest.fail()
